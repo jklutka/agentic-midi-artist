@@ -1,0 +1,476 @@
+{
+  "format_version": 1,
+  "name": "Runaway Train",
+  "seed": 61803,
+  "export_profile": "zenith_extreme_density",
+  "artistic_direction": {
+    "theme": "runaway_train",
+    "mood": {
+      "start": "urgent",
+      "middle": "deceptive_calm",
+      "end": "meltdown"
+    },
+    "visual_focus": [
+      "swarm_bursts",
+      "screen_consuming_density",
+      "exponential_climax"
+    ]
+  },
+  "music": {
+    "root": "D",
+    "octave": 3,
+    "scale": "harmonic_minor",
+    "tempo_start": 128,
+    "tempo_end": 184,
+    "beats_per_bar": 4
+  },
+  "scenes": [
+    {
+      "name": "Open Throttle",
+      "duration_bars": 12,
+      "intent": {
+        "intensity_start": 0.2,
+        "intensity_end": 0.45,
+        "intensity_curve": "ease_in",
+        "register_center": 52,
+        "register_span_start": 20,
+        "register_span_end": 34,
+        "order": 0.9,
+        "harmonic_stability": 0.9
+      },
+      "layers": [
+        {
+          "name": "engine",
+          "role": "bass",
+          "generator": {
+            "type": "pulse",
+            "params": {
+              "max_subdivision": 8
+            }
+          },
+          "color_group": "steel",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "rods",
+          "role": "melody",
+          "generator": {
+            "type": "arpeggio",
+            "params": {
+              "max_octaves": 2
+            }
+          },
+          "color_group": "copper",
+          "gain": 0.95,
+          "automation": []
+        }
+      ],
+      "transition_out": "keyboard_sweep",
+      "automation": []
+    },
+    {
+      "name": "First Swarm",
+      "duration_bars": 8,
+      "intent": {
+        "intensity_start": 0.85,
+        "intensity_end": 0.98,
+        "intensity_curve": "ease_in",
+        "register_center": 64,
+        "register_span_start": 70,
+        "register_span_end": 86,
+        "order": 0.35,
+        "harmonic_stability": 0.55
+      },
+      "layers": [
+        {
+          "name": "engine",
+          "role": "bass",
+          "generator": {
+            "type": "pulse",
+            "params": {
+              "max_subdivision": 8
+            }
+          },
+          "color_group": "steel",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "swarm",
+          "role": "texture",
+          "generator": {
+            "type": "cloud",
+            "params": {
+              "density_scale": 1.7
+            }
+          },
+          "color_group": "sparks",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "torrent",
+          "role": "visual_motion",
+          "generator": {
+            "type": "cascade",
+            "params": {
+              "direction": "alternate",
+              "runs_per_bar": 3
+            }
+          },
+          "color_group": "blur",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "slam",
+          "role": "accent",
+          "generator": {
+            "type": "chord_wall",
+            "params": {}
+          },
+          "color_group": "warning",
+          "gain": 1.0,
+          "automation": []
+        }
+      ],
+      "transition_out": "sudden_silence",
+      "automation": []
+    },
+    {
+      "name": "Coasting",
+      "duration_bars": 12,
+      "intent": {
+        "intensity_start": 0.2,
+        "intensity_end": 0.32,
+        "intensity_curve": "ease_in_out",
+        "register_center": 55,
+        "register_span_start": 22,
+        "register_span_end": 30,
+        "order": 0.92,
+        "harmonic_stability": 0.92
+      },
+      "layers": [
+        {
+          "name": "engine",
+          "role": "bass",
+          "generator": {
+            "type": "pulse",
+            "params": {
+              "max_subdivision": 4
+            }
+          },
+          "color_group": "steel",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "rods",
+          "role": "melody",
+          "generator": {
+            "type": "mirror",
+            "params": {}
+          },
+          "color_group": "copper",
+          "gain": 0.9,
+          "automation": []
+        }
+      ],
+      "transition_out": "density_crossfade",
+      "automation": []
+    },
+    {
+      "name": "Second Swarm",
+      "duration_bars": 10,
+      "intent": {
+        "intensity_start": 0.9,
+        "intensity_end": 1.0,
+        "intensity_curve": "ease_in",
+        "register_center": 64,
+        "register_span_start": 76,
+        "register_span_end": 86,
+        "order": 0.3,
+        "harmonic_stability": 0.5
+      },
+      "layers": [
+        {
+          "name": "engine",
+          "role": "bass",
+          "generator": {
+            "type": "pulse",
+            "params": {
+              "max_subdivision": 8
+            }
+          },
+          "color_group": "steel",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "swarm",
+          "role": "texture",
+          "generator": {
+            "type": "cloud",
+            "params": {
+              "density_scale": 1.8
+            }
+          },
+          "color_group": "sparks",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "torrent",
+          "role": "visual_motion",
+          "generator": {
+            "type": "cascade",
+            "params": {
+              "direction": "alternate",
+              "runs_per_bar": 3
+            }
+          },
+          "color_group": "blur",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "shear",
+          "role": "visual_motion",
+          "generator": {
+            "type": "wave",
+            "params": {
+              "wavelength_bars": 1.0,
+              "strands": 4
+            }
+          },
+          "color_group": "horizon",
+          "gain": 0.95,
+          "automation": []
+        },
+        {
+          "name": "slam",
+          "role": "accent",
+          "generator": {
+            "type": "chord_wall",
+            "params": {}
+          },
+          "color_group": "warning",
+          "gain": 1.0,
+          "automation": []
+        }
+      ],
+      "transition_out": "sudden_silence",
+      "automation": []
+    },
+    {
+      "name": "Quiet Valley",
+      "duration_bars": 20,
+      "intent": {
+        "intensity_start": 0.12,
+        "intensity_end": 0.28,
+        "intensity_curve": "ease_in_out",
+        "register_center": 57,
+        "register_span_start": 18,
+        "register_span_end": 32,
+        "order": 0.9,
+        "harmonic_stability": 0.95
+      },
+      "layers": [
+        {
+          "name": "engine",
+          "role": "bass",
+          "generator": {
+            "type": "pulse",
+            "params": {
+              "max_subdivision": 2
+            }
+          },
+          "color_group": "steel",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "rods",
+          "role": "melody",
+          "generator": {
+            "type": "mirror",
+            "params": {}
+          },
+          "color_group": "copper",
+          "gain": 0.9,
+          "automation": []
+        },
+        {
+          "name": "haze",
+          "role": "texture",
+          "generator": {
+            "type": "cloud",
+            "params": {
+              "density_scale": 0.4
+            }
+          },
+          "color_group": "smoke",
+          "gain": 0.75,
+          "automation": []
+        }
+      ],
+      "transition_out": "density_crossfade",
+      "automation": []
+    },
+    {
+      "name": "Overheat",
+      "duration_bars": 20,
+      "intent": {
+        "intensity_start": 0.4,
+        "intensity_end": 0.8,
+        "intensity_curve": "ease_in",
+        "register_center": 62,
+        "register_span_start": 36,
+        "register_span_end": 64,
+        "order": 0.6,
+        "harmonic_stability": 0.65
+      },
+      "layers": [
+        {
+          "name": "engine",
+          "role": "bass",
+          "generator": {
+            "type": "pulse",
+            "params": {
+              "max_subdivision": 8
+            }
+          },
+          "color_group": "steel",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "rods",
+          "role": "melody",
+          "generator": {
+            "type": "arpeggio",
+            "params": {
+              "max_octaves": 3
+            }
+          },
+          "color_group": "copper",
+          "gain": 0.95,
+          "automation": []
+        },
+        {
+          "name": "swarm",
+          "role": "texture",
+          "generator": {
+            "type": "cloud",
+            "params": {
+              "density_scale": 1.2
+            }
+          },
+          "color_group": "sparks",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "torrent",
+          "role": "visual_motion",
+          "generator": {
+            "type": "cascade",
+            "params": {
+              "direction": "alternate",
+              "runs_per_bar": 2
+            }
+          },
+          "color_group": "blur",
+          "gain": 1.0,
+          "automation": []
+        }
+      ],
+      "transition_out": "chord_wall_impact",
+      "automation": []
+    },
+    {
+      "name": "Meltdown",
+      "duration_bars": 24,
+      "intent": {
+        "intensity_start": 0.85,
+        "intensity_end": 1.0,
+        "intensity_curve": "exponential",
+        "register_center": 64,
+        "register_span_start": 76,
+        "register_span_end": 86,
+        "order": 0.15,
+        "harmonic_stability": 0.25
+      },
+      "layers": [
+        {
+          "name": "engine",
+          "role": "bass",
+          "generator": {
+            "type": "pulse",
+            "params": {
+              "max_subdivision": 8
+            }
+          },
+          "color_group": "steel",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "swarm",
+          "role": "texture",
+          "generator": {
+            "type": "cloud",
+            "params": {
+              "density_scale": 1.8
+            }
+          },
+          "color_group": "sparks",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "torrent",
+          "role": "visual_motion",
+          "generator": {
+            "type": "cascade",
+            "params": {
+              "direction": "alternate",
+              "runs_per_bar": 3
+            }
+          },
+          "color_group": "blur",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "shear",
+          "role": "visual_motion",
+          "generator": {
+            "type": "wave",
+            "params": {
+              "wavelength_bars": 1.0,
+              "strands": 4
+            }
+          },
+          "color_group": "horizon",
+          "gain": 0.95,
+          "automation": []
+        },
+        {
+          "name": "slam",
+          "role": "accent",
+          "generator": {
+            "type": "chord_wall",
+            "params": {}
+          },
+          "color_group": "warning",
+          "gain": 1.0,
+          "automation": []
+        }
+      ],
+      "transition_out": null,
+      "automation": []
+    }
+  ]
+}

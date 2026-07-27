@@ -1,0 +1,44 @@
+[project]
+name = "agentic-midi-artist"
+version = "0.2.0"
+description = "Agentic MIDI Artist — an agent-first generative performance composer for visually dramatic MIDI art, targeting Zenith-MIDI"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Justin Klutka" }]
+keywords = ["midi", "generative-music", "zenith-midi", "ai-agents", "procedural-art"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Sound/Audio :: MIDI",
+    "Topic :: Artistic Software",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "mido>=1.3.0",
+    "pillow>=10.0",
+]
+
+[project.urls]
+Repository = "https://github.com/jklutka/agentic-midi-artist"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.4.0",
+]
+
+[project.scripts]
+midi-art = "midi_art.app.cli:main"
+midi-art-studio = "midi_art.app.desktop:main"
+midi-dense-ui = "midi_app.ui:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

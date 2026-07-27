@@ -1,0 +1,293 @@
+{
+  "format_version": 1,
+  "name": "Collapse of the Machine",
+  "seed": 82217,
+  "export_profile": "zenith_high_density",
+  "artistic_direction": {
+    "theme": "controlled_chaos",
+    "mood": {
+      "start": "stable",
+      "middle": "unraveling",
+      "end": "catastrophic"
+    },
+    "visual_focus": [
+      "high_density_climax",
+      "fragmentation",
+      "note_clouds"
+    ]
+  },
+  "music": {
+    "root": "A",
+    "octave": 4,
+    "scale": "harmonic_minor",
+    "tempo_start": 132,
+    "tempo_end": 176,
+    "beats_per_bar": 4
+  },
+  "scenes": [
+    {
+      "name": "Order",
+      "duration_bars": 16,
+      "intent": {
+        "intensity_start": 0.1,
+        "intensity_end": 0.25,
+        "intensity_curve": "linear",
+        "register_center": 57,
+        "register_span_start": 20,
+        "register_span_end": 26,
+        "order": 0.9,
+        "harmonic_stability": 0.95
+      },
+      "layers": [
+        {
+          "name": "anchor",
+          "role": "bass",
+          "generator": {
+            "type": "pulse",
+            "params": {
+              "max_subdivision": 4
+            }
+          },
+          "color_group": "ember",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "theme",
+          "role": "melody",
+          "generator": {
+            "type": "mirror",
+            "params": {}
+          },
+          "color_group": "flame",
+          "gain": 0.95,
+          "automation": []
+        }
+      ],
+      "transition_out": "density_crossfade",
+      "automation": []
+    },
+    {
+      "name": "Hairline Cracks",
+      "duration_bars": 24,
+      "intent": {
+        "intensity_start": 0.25,
+        "intensity_end": 0.5,
+        "intensity_curve": "ease_in",
+        "register_center": 60,
+        "register_span_start": 26,
+        "register_span_end": 44,
+        "order": 0.7,
+        "harmonic_stability": 0.75
+      },
+      "layers": [
+        {
+          "name": "anchor",
+          "role": "bass",
+          "generator": {
+            "type": "pulse",
+            "params": {
+              "max_subdivision": 4
+            }
+          },
+          "color_group": "ember",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "theme",
+          "role": "melody",
+          "generator": {
+            "type": "mirror",
+            "params": {}
+          },
+          "color_group": "flame",
+          "gain": 0.95,
+          "automation": []
+        },
+        {
+          "name": "storm",
+          "role": "texture",
+          "generator": {
+            "type": "cloud",
+            "params": {
+              "density_scale": 1.4
+            }
+          },
+          "color_group": "ash",
+          "gain": 1.0,
+          "automation": []
+        }
+      ],
+      "transition_out": "keyboard_sweep",
+      "automation": []
+    },
+    {
+      "name": "Fracture",
+      "duration_bars": 24,
+      "intent": {
+        "intensity_start": 0.5,
+        "intensity_end": 0.8,
+        "intensity_curve": "ease_in",
+        "register_center": 64,
+        "register_span_start": 44,
+        "register_span_end": 66,
+        "order": 0.45,
+        "harmonic_stability": 0.5
+      },
+      "layers": [
+        {
+          "name": "anchor",
+          "role": "bass",
+          "generator": {
+            "type": "pulse",
+            "params": {
+              "max_subdivision": 4
+            }
+          },
+          "color_group": "ember",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "theme",
+          "role": "melody",
+          "generator": {
+            "type": "mirror",
+            "params": {}
+          },
+          "color_group": "flame",
+          "gain": 0.95,
+          "automation": []
+        },
+        {
+          "name": "storm",
+          "role": "texture",
+          "generator": {
+            "type": "cloud",
+            "params": {
+              "density_scale": 1.4
+            }
+          },
+          "color_group": "ash",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "surge",
+          "role": "visual_motion",
+          "generator": {
+            "type": "cascade",
+            "params": {
+              "direction": "alternate",
+              "runs_per_bar": 2
+            }
+          },
+          "color_group": "spark",
+          "gain": 1.0,
+          "automation": []
+        }
+      ],
+      "transition_out": "sudden_silence",
+      "automation": []
+    },
+    {
+      "name": "Collapse",
+      "duration_bars": 20,
+      "intent": {
+        "intensity_start": 0.85,
+        "intensity_end": 1.0,
+        "intensity_curve": "exponential",
+        "register_center": 64,
+        "register_span_start": 66,
+        "register_span_end": 87,
+        "order": 0.25,
+        "harmonic_stability": 0.3
+      },
+      "layers": [
+        {
+          "name": "anchor",
+          "role": "bass",
+          "generator": {
+            "type": "pulse",
+            "params": {
+              "max_subdivision": 4
+            }
+          },
+          "color_group": "ember",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "storm",
+          "role": "texture",
+          "generator": {
+            "type": "cloud",
+            "params": {
+              "density_scale": 1.4
+            }
+          },
+          "color_group": "ash",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "surge",
+          "role": "visual_motion",
+          "generator": {
+            "type": "cascade",
+            "params": {
+              "direction": "alternate",
+              "runs_per_bar": 2
+            }
+          },
+          "color_group": "spark",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "slabs",
+          "role": "accent",
+          "generator": {
+            "type": "chord_wall",
+            "params": {}
+          },
+          "color_group": "core",
+          "gain": 1.0,
+          "automation": []
+        }
+      ],
+      "transition_out": "chord_wall_impact",
+      "automation": []
+    },
+    {
+      "name": "Aftermath",
+      "duration_bars": 12,
+      "intent": {
+        "intensity_start": 0.2,
+        "intensity_end": 0.04,
+        "intensity_curve": "ease_out",
+        "register_center": 52,
+        "register_span_start": 30,
+        "register_span_end": 10,
+        "order": 0.8,
+        "harmonic_stability": 0.9
+      },
+      "layers": [
+        {
+          "name": "theme",
+          "role": "melody",
+          "generator": {
+            "type": "mirror",
+            "params": {}
+          },
+          "color_group": "flame",
+          "gain": 0.95,
+          "automation": []
+        }
+      ],
+      "transition_out": null,
+      "automation": []
+    }
+  ]
+}

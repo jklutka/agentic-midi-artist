@@ -1,0 +1,346 @@
+{
+  "format_version": 1,
+  "name": "Rolling Train",
+  "seed": 41562,
+  "export_profile": "zenith_standard",
+  "artistic_direction": {
+    "theme": "rolling_train",
+    "mood": {
+      "start": "patient",
+      "middle": "relentless_momentum",
+      "end": "settling"
+    },
+    "visual_focus": [
+      "steady_pulse",
+      "rolling_waves",
+      "accelerating_density"
+    ]
+  },
+  "music": {
+    "root": "G",
+    "octave": 3,
+    "scale": "dorian",
+    "tempo_start": 104,
+    "tempo_end": 152,
+    "beats_per_bar": 4
+  },
+  "scenes": [
+    {
+      "name": "Departure",
+      "duration_bars": 12,
+      "intent": {
+        "intensity_start": 0.05,
+        "intensity_end": 0.25,
+        "intensity_curve": "ease_in",
+        "register_center": 45,
+        "register_span_start": 14,
+        "register_span_end": 22,
+        "order": 0.95,
+        "harmonic_stability": 0.95
+      },
+      "layers": [
+        {
+          "name": "wheels",
+          "role": "bass",
+          "generator": {
+            "type": "pulse",
+            "params": {
+              "max_subdivision": 8
+            }
+          },
+          "color_group": "steel",
+          "gain": 1.0,
+          "automation": []
+        }
+      ],
+      "transition_out": "density_crossfade",
+      "automation": []
+    },
+    {
+      "name": "Gathering Speed",
+      "duration_bars": 20,
+      "intent": {
+        "intensity_start": 0.25,
+        "intensity_end": 0.5,
+        "intensity_curve": "linear",
+        "register_center": 55,
+        "register_span_start": 22,
+        "register_span_end": 36,
+        "order": 0.92,
+        "harmonic_stability": 0.9
+      },
+      "layers": [
+        {
+          "name": "wheels",
+          "role": "bass",
+          "generator": {
+            "type": "pulse",
+            "params": {
+              "max_subdivision": 8
+            }
+          },
+          "color_group": "steel",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "rods",
+          "role": "melody",
+          "generator": {
+            "type": "arpeggio",
+            "params": {
+              "max_octaves": 2
+            }
+          },
+          "color_group": "copper",
+          "gain": 0.95,
+          "automation": []
+        }
+      ],
+      "transition_out": "keyboard_sweep",
+      "automation": []
+    },
+    {
+      "name": "Rolling Plains",
+      "duration_bars": 32,
+      "intent": {
+        "intensity_start": 0.5,
+        "intensity_end": 0.65,
+        "intensity_curve": "ease_in_out",
+        "register_center": 62,
+        "register_span_start": 36,
+        "register_span_end": 48,
+        "order": 0.85,
+        "harmonic_stability": 0.9
+      },
+      "layers": [
+        {
+          "name": "wheels",
+          "role": "bass",
+          "generator": {
+            "type": "pulse",
+            "params": {
+              "max_subdivision": 8
+            }
+          },
+          "color_group": "steel",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "rods",
+          "role": "melody",
+          "generator": {
+            "type": "arpeggio",
+            "params": {
+              "max_octaves": 2
+            }
+          },
+          "color_group": "copper",
+          "gain": 0.95,
+          "automation": []
+        },
+        {
+          "name": "landscape",
+          "role": "visual_motion",
+          "generator": {
+            "type": "wave",
+            "params": {
+              "wavelength_bars": 4.0,
+              "strands": 2
+            }
+          },
+          "color_group": "horizon",
+          "gain": 0.9,
+          "automation": []
+        },
+        {
+          "name": "smoke",
+          "role": "texture",
+          "generator": {
+            "type": "cloud",
+            "params": {
+              "density_scale": 0.6
+            }
+          },
+          "color_group": "smoke",
+          "gain": 0.8,
+          "automation": []
+        }
+      ],
+      "transition_out": "sudden_silence",
+      "automation": []
+    },
+    {
+      "name": "Tunnel",
+      "duration_bars": 12,
+      "intent": {
+        "intensity_start": 0.45,
+        "intensity_end": 0.6,
+        "intensity_curve": "linear",
+        "register_center": 43,
+        "register_span_start": 22,
+        "register_span_end": 28,
+        "order": 0.9,
+        "harmonic_stability": 0.7
+      },
+      "layers": [
+        {
+          "name": "wheels",
+          "role": "bass",
+          "generator": {
+            "type": "pulse",
+            "params": {
+              "max_subdivision": 8
+            }
+          },
+          "color_group": "steel",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "smoke",
+          "role": "texture",
+          "generator": {
+            "type": "cloud",
+            "params": {
+              "density_scale": 0.9
+            }
+          },
+          "color_group": "smoke",
+          "gain": 0.9,
+          "automation": []
+        }
+      ],
+      "transition_out": "chord_wall_impact",
+      "automation": []
+    },
+    {
+      "name": "Full Steam",
+      "duration_bars": 24,
+      "intent": {
+        "intensity_start": 0.7,
+        "intensity_end": 0.95,
+        "intensity_curve": "ease_in",
+        "register_center": 64,
+        "register_span_start": 48,
+        "register_span_end": 72,
+        "order": 0.8,
+        "harmonic_stability": 0.85
+      },
+      "layers": [
+        {
+          "name": "wheels",
+          "role": "bass",
+          "generator": {
+            "type": "pulse",
+            "params": {
+              "max_subdivision": 8
+            }
+          },
+          "color_group": "steel",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "rods",
+          "role": "melody",
+          "generator": {
+            "type": "arpeggio",
+            "params": {
+              "max_octaves": 3
+            }
+          },
+          "color_group": "copper",
+          "gain": 0.95,
+          "automation": []
+        },
+        {
+          "name": "landscape",
+          "role": "visual_motion",
+          "generator": {
+            "type": "wave",
+            "params": {
+              "wavelength_bars": 2.0,
+              "strands": 3
+            }
+          },
+          "color_group": "horizon",
+          "gain": 0.9,
+          "automation": []
+        },
+        {
+          "name": "scenery",
+          "role": "visual_motion",
+          "generator": {
+            "type": "cascade",
+            "params": {
+              "direction": "alternate",
+              "runs_per_bar": 2
+            }
+          },
+          "color_group": "blur",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "whistle",
+          "role": "accent",
+          "generator": {
+            "type": "chord_wall",
+            "params": {}
+          },
+          "color_group": "brass",
+          "gain": 1.0,
+          "automation": []
+        }
+      ],
+      "transition_out": "density_crossfade",
+      "automation": []
+    },
+    {
+      "name": "Arrival",
+      "duration_bars": 16,
+      "intent": {
+        "intensity_start": 0.5,
+        "intensity_end": 0.05,
+        "intensity_curve": "ease_out",
+        "register_center": 50,
+        "register_span_start": 36,
+        "register_span_end": 12,
+        "order": 0.95,
+        "harmonic_stability": 0.95
+      },
+      "layers": [
+        {
+          "name": "wheels",
+          "role": "bass",
+          "generator": {
+            "type": "pulse",
+            "params": {
+              "max_subdivision": 4
+            }
+          },
+          "color_group": "steel",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "rods",
+          "role": "melody",
+          "generator": {
+            "type": "arpeggio",
+            "params": {
+              "max_octaves": 2
+            }
+          },
+          "color_group": "copper",
+          "gain": 0.9,
+          "automation": []
+        }
+      ],
+      "transition_out": null,
+      "automation": []
+    }
+  ]
+}

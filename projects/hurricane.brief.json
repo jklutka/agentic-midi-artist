@@ -1,0 +1,15 @@
+{
+  "brief_format_version": 1,
+  "title": "Hurricane",
+  "logline": "A storm gathers, seizes everything, carries you flying into its calm eye — then chaos, and the long fall back to earth.",
+  "mood_arc": ["build up", "take over", "flying", "peaceful", "chaos", "falling"],
+  "energy_shape": "steady menacing build, violent takeover, soaring lift, a still weightless eye, all-out chaos, then a long descending release",
+  "duration_seconds": 200,
+  "tempo_feel": "rising urgency, relentless at the peak",
+  "imagery": ["gathering storm wall", "wind seizing the ground", "flying inside the spiral", "the silent eye", "shredding maelstrom", "debris falling from the sky"],
+  "palette": ["sky", "wind", "rain", "surge", "eye", "debris"],
+  "must_have_moments": ["a weightless peaceful eye in the middle", "dead silence right before the chaos returns", "a long falling descent to end"],
+  "avoid": ["cheerful brightness", "ending on a climax — it must land, not cut"],
+  "style_hint": "controlled_chaos",
+  "notes": "the eye should feel genuinely safe so the returning chaos hurts; the fall is downward motion, not just quiet"
+}

@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Generated output: everything except the folder marker
+output/*
+!output/.gitkeep
+
+# Zenith-MIDI renders and synthesized audio
+renders/*.avi
+renders/*.mp4
+renders/*.mkv
+renders/*.wav
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store

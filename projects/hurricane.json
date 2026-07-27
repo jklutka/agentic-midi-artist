@@ -1,0 +1,277 @@
+{
+  "format_version": 1,
+  "name": "Hurricane",
+  "seed": 19337,
+  "export_profile": "zenith_high_density",
+  "brief": "projects\\hurricane.brief.json",
+  "artistic_direction": {
+    "theme": "A storm gathers, seizes everything, carries you flying into its calm eye — then chaos, and the long fall back to earth.",
+    "mood": {
+      "start": "build up",
+      "middle": "take over, flying, peaceful, chaos",
+      "end": "falling"
+    },
+    "visual_focus": [
+      "gathering storm wall",
+      "wind seizing the ground",
+      "flying inside the spiral",
+      "the silent eye",
+      "shredding maelstrom",
+      "debris falling from the sky"
+    ]
+  },
+  "music": {
+    "root": "A",
+    "octave": 3,
+    "scale": "harmonic_minor",
+    "tempo_start": 108,
+    "tempo_end": 172,
+    "beats_per_bar": 4
+  },
+  "scenes": [
+    {
+      "name": "Gathering",
+      "duration_bars": 20,
+      "intent": {
+        "intensity_start": 0.08,
+        "intensity_end": 0.35,
+        "intensity_curve": "ease_in",
+        "register_center": 50,
+        "register_span_start": 16,
+        "register_span_end": 28,
+        "order": 0.85,
+        "harmonic_stability": 0.9
+      },
+      "layers": [
+        {
+          "name": "pressure",
+          "role": "bass",
+          "generator": { "type": "pulse", "params": { "max_subdivision": 2 } },
+          "color_group": "sky",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "first-rain",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 0.5 } },
+          "color_group": "rain",
+          "gain": 0.8,
+          "automation": []
+        },
+        {
+          "name": "far-wind",
+          "role": "visual_motion",
+          "generator": { "type": "wave", "params": { "wavelength_bars": 8.0, "strands": 1 } },
+          "color_group": "wind",
+          "gain": 0.7,
+          "automation": []
+        }
+      ],
+      "transition_out": "density_crossfade",
+      "automation": []
+    },
+    {
+      "name": "Landfall",
+      "duration_bars": 20,
+      "intent": {
+        "intensity_start": 0.4,
+        "intensity_end": 0.7,
+        "intensity_curve": "ease_in",
+        "register_center": 58,
+        "register_span_start": 30,
+        "register_span_end": 48,
+        "order": 0.55,
+        "harmonic_stability": 0.6
+      },
+      "layers": [
+        {
+          "name": "pressure",
+          "role": "bass",
+          "generator": { "type": "pulse", "params": { "max_subdivision": 4 } },
+          "color_group": "sky",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "driving-rain",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 1.2 } },
+          "color_group": "rain",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "gusts",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "alternate", "runs_per_bar": 1 } },
+          "color_group": "wind",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "surge",
+          "role": "accent",
+          "generator": { "type": "chord_wall", "params": {} },
+          "color_group": "surge",
+          "gain": 1.0,
+          "automation": []
+        }
+      ],
+      "transition_out": "keyboard_sweep",
+      "automation": []
+    },
+    {
+      "name": "Flying",
+      "duration_bars": 20,
+      "intent": {
+        "intensity_start": 0.55,
+        "intensity_end": 0.7,
+        "intensity_curve": "linear",
+        "register_center": 74,
+        "register_span_start": 40,
+        "register_span_end": 52,
+        "order": 0.6,
+        "harmonic_stability": 0.75
+      },
+      "layers": [
+        {
+          "name": "spiral",
+          "role": "visual_motion",
+          "generator": { "type": "wave", "params": { "wavelength_bars": 3.0, "strands": 3 } },
+          "color_group": "wind",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "updraft",
+          "role": "melody",
+          "generator": { "type": "arpeggio", "params": { "max_octaves": 4 } },
+          "color_group": "sky",
+          "gain": 0.9,
+          "automation": []
+        },
+        {
+          "name": "high-rain",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 0.8 } },
+          "color_group": "rain",
+          "gain": 0.75,
+          "automation": []
+        }
+      ],
+      "transition_out": "density_crossfade",
+      "automation": []
+    },
+    {
+      "name": "The Eye",
+      "duration_bars": 16,
+      "intent": {
+        "intensity_start": 0.12,
+        "intensity_end": 0.18,
+        "intensity_curve": "linear",
+        "register_center": 66,
+        "register_span_start": 20,
+        "register_span_end": 16,
+        "order": 0.9,
+        "harmonic_stability": 0.98
+      },
+      "layers": [
+        {
+          "name": "stillness",
+          "role": "melody",
+          "generator": { "type": "mirror", "params": {} },
+          "color_group": "eye",
+          "gain": 0.85,
+          "automation": []
+        }
+      ],
+      "transition_out": "sudden_silence",
+      "automation": []
+    },
+    {
+      "name": "Maelstrom",
+      "duration_bars": 24,
+      "intent": {
+        "intensity_start": 0.85,
+        "intensity_end": 1.0,
+        "intensity_curve": "exponential",
+        "register_center": 64,
+        "register_span_start": 60,
+        "register_span_end": 84,
+        "order": 0.15,
+        "harmonic_stability": 0.2
+      },
+      "layers": [
+        {
+          "name": "shredder",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 1.6 } },
+          "color_group": "debris",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "cross-winds",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "alternate", "runs_per_bar": 2 } },
+          "color_group": "wind",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "walls",
+          "role": "accent",
+          "generator": { "type": "chord_wall", "params": {} },
+          "color_group": "surge",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "hammer",
+          "role": "bass",
+          "generator": { "type": "pulse", "params": { "max_subdivision": 8 } },
+          "color_group": "sky",
+          "gain": 1.0,
+          "automation": []
+        }
+      ],
+      "transition_out": "chord_wall_impact",
+      "automation": []
+    },
+    {
+      "name": "The Fall",
+      "duration_bars": 16,
+      "intent": {
+        "intensity_start": 0.5,
+        "intensity_end": 0.04,
+        "intensity_curve": "ease_out",
+        "register_center": 45,
+        "register_span_start": 44,
+        "register_span_end": 12,
+        "order": 0.7,
+        "harmonic_stability": 0.85
+      },
+      "layers": [
+        {
+          "name": "debris-fall",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "down", "runs_per_bar": 1 } },
+          "color_group": "debris",
+          "gain": 0.9,
+          "automation": []
+        },
+        {
+          "name": "last-rain",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 0.35 } },
+          "color_group": "rain",
+          "gain": 0.7,
+          "automation": []
+        }
+      ],
+      "transition_out": null,
+      "automation": []
+    }
+  ]
+}
