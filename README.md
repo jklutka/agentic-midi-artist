@@ -17,6 +17,22 @@ Zenith's visual behavior rather than generic playback.
 Choose a style  →  shape the scene timeline  →  preview  →  compose  →  analyze  →  export  →  render in Zenith
 ```
 
+## Gallery
+
+Frames captured from Zenith renders of prior performances, alongside the `midi-art preview`
+analysis view used to sculpt them before rendering:
+
+<table>
+<tr>
+<td width="50%"><img src="docs/images/runaway-chaos-01.jpg" alt="Runaway Chaos — dense symmetric note wall"></td>
+<td width="50%"><img src="docs/images/runaway-chaos-02.jpg" alt="Runaway Chaos — diagonal cascade sweep"></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/images/hurricane-01.jpg" alt="Hurricane — chord wall with a diagonal streak"></td>
+<td width="50%"><img src="docs/images/hurricane-preview.png" alt="midi-art preview output: piano roll, density, and polyphony for Hurricane"></td>
+</tr>
+</table>
+
 ## Setup
 
 ```powershell
