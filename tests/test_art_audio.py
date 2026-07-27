@@ -55,7 +55,7 @@ def test_find_ffmpeg_falls_back_to_zenith_folder(tmp_path: Path, monkeypatch):
     from midi_art import toolchain
 
     zenith = _touch(tmp_path / "zenith" / "Zenith.exe")
-    ffmpeg = _touch(tmp_path / "zenith" / "ffmpeg.exe")
+    ffmpeg = _touch(tmp_path / "zenith" / toolchain._exe("ffmpeg"))
     monkeypatch.setenv("ZENITH_MIDI_PATH", str(zenith))
     monkeypatch.setattr(toolchain.shutil, "which", lambda _name: None)
     assert audio.find_ffmpeg() == ffmpeg
