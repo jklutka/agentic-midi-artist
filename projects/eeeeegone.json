@@ -1,0 +1,555 @@
+{
+  "format_version": 1,
+  "name": "EEEEEGone",
+  "seed": 4207,
+  "export_profile": "zenith_extreme_density",
+  "brief": "projects\\eeeeegone.brief.json",
+  "artistic_direction": {
+    "theme": "A steady, relentless build from near-nothing into giant crossing waves of notes, swelling until every single key is in use and the density feels like a million notes — and it stays there.",
+    "mood": {
+      "start": "quiet unease",
+      "middle": "waves gathering, crossing currents intensifying, swarm overtaking, every key ablaze",
+      "end": "total extreme overload"
+    },
+    "visual_focus": [
+      "giant waves crossing in and out of each other",
+      "a swarm growing until it blots out the sky",
+      "every key on the piano lit at once",
+      "an overwhelming flood of sound"
+    ]
+  },
+  "music": {
+    "root": "D",
+    "octave": 4,
+    "scale": "dorian",
+    "tempo_start": 100,
+    "tempo_end": 210,
+    "beats_per_bar": 4
+  },
+  "scenes": [
+    {
+      "name": "Stillwater",
+      "duration_bars": 16,
+      "intent": {
+        "intensity_start": 0.08,
+        "intensity_end": 0.15,
+        "intensity_curve": "ease_in",
+        "register_center": 60,
+        "register_span_start": 12,
+        "register_span_end": 20,
+        "order": 0.75,
+        "harmonic_stability": 0.85
+      },
+      "layers": [
+        {
+          "name": "anchor",
+          "role": "bass",
+          "generator": { "type": "pulse", "params": { "max_subdivision": 2 } },
+          "color_group": "swell",
+          "gain": 0.9,
+          "automation": []
+        },
+        {
+          "name": "bigwave",
+          "role": "visual_motion",
+          "generator": { "type": "wave", "params": { "wavelength_bars": 8, "strands": 2 } },
+          "color_group": "wave",
+          "gain": 0.9,
+          "automation": []
+        }
+      ],
+      "transition_out": "density_crossfade",
+      "automation": []
+    },
+    {
+      "name": "Gathering Waves",
+      "duration_bars": 24,
+      "intent": {
+        "intensity_start": 0.15,
+        "intensity_end": 0.35,
+        "intensity_curve": "ease_in",
+        "register_center": 62,
+        "register_span_start": 20,
+        "register_span_end": 40,
+        "order": 0.65,
+        "harmonic_stability": 0.75
+      },
+      "layers": [
+        {
+          "name": "anchor",
+          "role": "bass",
+          "generator": { "type": "pulse", "params": { "max_subdivision": 4 } },
+          "color_group": "swell",
+          "gain": 0.9,
+          "automation": []
+        },
+        {
+          "name": "bigwave",
+          "role": "visual_motion",
+          "generator": { "type": "wave", "params": { "wavelength_bars": 6, "strands": 3 } },
+          "color_group": "wave",
+          "gain": 0.95,
+          "automation": []
+        },
+        {
+          "name": "crosswave",
+          "role": "visual_motion",
+          "generator": { "type": "wave", "params": { "wavelength_bars": 1.5, "strands": 3 } },
+          "color_group": "crosswave",
+          "gain": 0.9,
+          "automation": []
+        },
+        {
+          "name": "ember",
+          "role": "melody",
+          "generator": { "type": "mirror", "params": {} },
+          "color_group": "ember",
+          "gain": 0.8,
+          "automation": []
+        }
+      ],
+      "transition_out": "density_crossfade",
+      "automation": []
+    },
+    {
+      "name": "Crossing Currents",
+      "duration_bars": 24,
+      "intent": {
+        "intensity_start": 0.35,
+        "intensity_end": 0.55,
+        "intensity_curve": "ease_in",
+        "register_center": 63,
+        "register_span_start": 40,
+        "register_span_end": 58,
+        "order": 0.5,
+        "harmonic_stability": 0.6
+      },
+      "layers": [
+        {
+          "name": "anchor",
+          "role": "bass",
+          "generator": { "type": "pulse", "params": { "max_subdivision": 6 } },
+          "color_group": "swell",
+          "gain": 0.95,
+          "automation": []
+        },
+        {
+          "name": "bigwave",
+          "role": "visual_motion",
+          "generator": { "type": "wave", "params": { "wavelength_bars": 5, "strands": 4 } },
+          "color_group": "wave",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "crosswave",
+          "role": "visual_motion",
+          "generator": { "type": "wave", "params": { "wavelength_bars": 1.25, "strands": 5 } },
+          "color_group": "crosswave",
+          "gain": 0.95,
+          "automation": []
+        },
+        {
+          "name": "surge",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "alternate", "runs_per_bar": 3 } },
+          "color_group": "surge",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "storm",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 1.2 } },
+          "color_group": "static",
+          "gain": 1.0,
+          "automation": []
+        }
+      ],
+      "transition_out": "keyboard_sweep",
+      "automation": []
+    },
+    {
+      "name": "Swarm",
+      "duration_bars": 28,
+      "intent": {
+        "intensity_start": 0.55,
+        "intensity_end": 0.75,
+        "intensity_curve": "ease_in",
+        "register_center": 64,
+        "register_span_start": 58,
+        "register_span_end": 74,
+        "order": 0.35,
+        "harmonic_stability": 0.45
+      },
+      "layers": [
+        {
+          "name": "anchor",
+          "role": "bass",
+          "generator": { "type": "pulse", "params": { "max_subdivision": 8 } },
+          "color_group": "swell",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "bigwave",
+          "role": "visual_motion",
+          "generator": { "type": "wave", "params": { "wavelength_bars": 4, "strands": 5 } },
+          "color_group": "wave",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "crosswave",
+          "role": "visual_motion",
+          "generator": { "type": "wave", "params": { "wavelength_bars": 1.0, "strands": 6 } },
+          "color_group": "crosswave",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "surge",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "alternate", "runs_per_bar": 5 } },
+          "color_group": "surge",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "storm",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 2.0 } },
+          "color_group": "static",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "slabs",
+          "role": "accent",
+          "generator": { "type": "chord_wall", "params": { "sustain_beats": 0.0 } },
+          "color_group": "flash",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "storm2",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 2.0 } },
+          "color_group": "static",
+          "gain": 0.95,
+          "automation": []
+        },
+        {
+          "name": "surge2",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "up", "runs_per_bar": 4 } },
+          "color_group": "surge",
+          "gain": 0.95,
+          "automation": []
+        },
+        {
+          "name": "storm3",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 2.5 } },
+          "color_group": "static",
+          "gain": 0.9,
+          "automation": []
+        },
+        {
+          "name": "surge3",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "down", "runs_per_bar": 5 } },
+          "color_group": "surge",
+          "gain": 0.9,
+          "automation": []
+        }
+      ],
+      "transition_out": "keyboard_sweep",
+      "automation": []
+    },
+    {
+      "name": "Every Key",
+      "duration_bars": 32,
+      "intent": {
+        "intensity_start": 0.75,
+        "intensity_end": 0.92,
+        "intensity_curve": "exponential",
+        "register_center": 64,
+        "register_span_start": 74,
+        "register_span_end": 88,
+        "order": 0.2,
+        "harmonic_stability": 0.25
+      },
+      "layers": [
+        {
+          "name": "anchor",
+          "role": "bass",
+          "generator": { "type": "pulse", "params": { "max_subdivision": 12 } },
+          "color_group": "swell",
+          "gain": 1.05,
+          "automation": []
+        },
+        {
+          "name": "bigwave",
+          "role": "visual_motion",
+          "generator": { "type": "wave", "params": { "wavelength_bars": 3, "strands": 6 } },
+          "color_group": "wave",
+          "gain": 1.05,
+          "automation": []
+        },
+        {
+          "name": "crosswave",
+          "role": "visual_motion",
+          "generator": { "type": "wave", "params": { "wavelength_bars": 0.75, "strands": 6 } },
+          "color_group": "crosswave",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "surge",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "alternate", "runs_per_bar": 7 } },
+          "color_group": "surge",
+          "gain": 1.05,
+          "automation": []
+        },
+        {
+          "name": "storm",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 3.0 } },
+          "color_group": "static",
+          "gain": 1.05,
+          "automation": []
+        },
+        {
+          "name": "slabs",
+          "role": "accent",
+          "generator": { "type": "chord_wall", "params": { "sustain_beats": 0.0 } },
+          "color_group": "flash",
+          "gain": 1.05,
+          "automation": []
+        },
+        {
+          "name": "storm2",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 2.5 } },
+          "color_group": "static",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "surge2",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "up", "runs_per_bar": 6 } },
+          "color_group": "surge",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "midwave",
+          "role": "visual_motion",
+          "generator": { "type": "wave", "params": { "wavelength_bars": 1.5, "strands": 4 } },
+          "color_group": "wave",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "storm3",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 3.0 } },
+          "color_group": "static",
+          "gain": 0.95,
+          "automation": []
+        },
+        {
+          "name": "surge3",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "down", "runs_per_bar": 7 } },
+          "color_group": "surge",
+          "gain": 0.95,
+          "automation": []
+        },
+        {
+          "name": "midwave2",
+          "role": "visual_motion",
+          "generator": { "type": "wave", "params": { "wavelength_bars": 2.0, "strands": 4 } },
+          "color_group": "crosswave",
+          "gain": 0.95,
+          "automation": []
+        },
+        {
+          "name": "storm4",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 3.0 } },
+          "color_group": "static",
+          "gain": 0.9,
+          "automation": []
+        },
+        {
+          "name": "surge4",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "alternate", "runs_per_bar": 7 } },
+          "color_group": "surge",
+          "gain": 0.9,
+          "automation": []
+        }
+      ],
+      "transition_out": "chord_wall_impact",
+      "automation": []
+    },
+    {
+      "name": "Total Overload",
+      "duration_bars": 64,
+      "intent": {
+        "intensity_start": 0.93,
+        "intensity_end": 1.0,
+        "intensity_curve": "exponential",
+        "register_center": 64,
+        "register_span_start": 88,
+        "register_span_end": 88,
+        "order": 0.08,
+        "harmonic_stability": 0.1
+      },
+      "layers": [
+        {
+          "name": "anchor",
+          "role": "bass",
+          "generator": { "type": "pulse", "params": { "max_subdivision": 16 } },
+          "color_group": "swell",
+          "gain": 1.1,
+          "automation": []
+        },
+        {
+          "name": "bigwave",
+          "role": "visual_motion",
+          "generator": { "type": "wave", "params": { "wavelength_bars": 2, "strands": 6 } },
+          "color_group": "wave",
+          "gain": 1.1,
+          "automation": []
+        },
+        {
+          "name": "crosswave",
+          "role": "visual_motion",
+          "generator": { "type": "wave", "params": { "wavelength_bars": 0.5, "strands": 6 } },
+          "color_group": "crosswave",
+          "gain": 1.05,
+          "automation": []
+        },
+        {
+          "name": "surge",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "alternate", "runs_per_bar": 8 } },
+          "color_group": "surge",
+          "gain": 1.1,
+          "automation": []
+        },
+        {
+          "name": "storm",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 4.0 } },
+          "color_group": "static",
+          "gain": 1.1,
+          "automation": []
+        },
+        {
+          "name": "slabs",
+          "role": "accent",
+          "generator": { "type": "chord_wall", "params": { "sustain_beats": 0.0 } },
+          "color_group": "flash",
+          "gain": 1.1,
+          "automation": []
+        },
+        {
+          "name": "slabs2",
+          "role": "accent",
+          "generator": { "type": "chord_wall", "params": { "sustain_beats": 0.0 } },
+          "color_group": "flash",
+          "gain": 1.05,
+          "automation": []
+        },
+        {
+          "name": "storm2",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 4.0 } },
+          "color_group": "static",
+          "gain": 1.05,
+          "automation": []
+        },
+        {
+          "name": "surge2",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "up", "runs_per_bar": 8 } },
+          "color_group": "surge",
+          "gain": 1.05,
+          "automation": []
+        },
+        {
+          "name": "midwave",
+          "role": "visual_motion",
+          "generator": { "type": "wave", "params": { "wavelength_bars": 1.0, "strands": 6 } },
+          "color_group": "wave",
+          "gain": 1.05,
+          "automation": []
+        },
+        {
+          "name": "microwave",
+          "role": "visual_motion",
+          "generator": { "type": "wave", "params": { "wavelength_bars": 0.3, "strands": 6 } },
+          "color_group": "crosswave",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "storm3",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 4.0 } },
+          "color_group": "static",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "storm4",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 4.0 } },
+          "color_group": "static",
+          "gain": 0.95,
+          "automation": []
+        },
+        {
+          "name": "surge3",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "down", "runs_per_bar": 8 } },
+          "color_group": "surge",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "nanowave",
+          "role": "visual_motion",
+          "generator": { "type": "wave", "params": { "wavelength_bars": 0.25, "strands": 6 } },
+          "color_group": "wave",
+          "gain": 0.95,
+          "automation": []
+        },
+        {
+          "name": "storm5",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 4.0 } },
+          "color_group": "static",
+          "gain": 0.9,
+          "automation": []
+        },
+        {
+          "name": "surge4",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "alternate", "runs_per_bar": 8 } },
+          "color_group": "surge",
+          "gain": 0.9,
+          "automation": []
+        }
+      ],
+      "transition_out": null,
+      "automation": []
+    }
+  ]
+}

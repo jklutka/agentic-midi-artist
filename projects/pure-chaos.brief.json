@@ -1,0 +1,33 @@
+{
+  "brief_format_version": 1,
+  "title": "Pure Chaos",
+  "logline": "A system overloads at full extreme from the first breath, blacks out twice without warning, crawls back each time, then climbs unstoppably into a total blackout.",
+  "mood_arc": [
+    "maximum chaos from the first bar",
+    "sudden void",
+    "trickling return",
+    "corrupted rebuild back to extreme",
+    "sudden void again",
+    "trickling return",
+    "unstoppable climb to blackout"
+  ],
+  "energy_shape": "slammed to extreme at bar one, no build-in; two sudden cliff-edge drops to near silence, each followed by a slow trickling rebuild back to chaos; final scene is an ever-building climb with no ceiling, ending in a total wall-of-notes blackout",
+  "duration_seconds": 180,
+  "tempo_feel": "relentless, ~160 bpm, accelerating further into the finale",
+  "imagery": [
+    "a power grid overloading",
+    "a blackout",
+    "flickering emergency lights",
+    "a machine tearing itself apart"
+  ],
+  "palette": ["red alarm", "electric blue", "white flash", "black void"],
+  "must_have_moments": [
+    "full extreme intensity from the very first bar, no gentle intro",
+    "two sudden silent drops that catch the listener off guard",
+    "a trickle of notes crawling back after each drop",
+    "a final climb that never plateaus, ending in a total blackout wall of notes"
+  ],
+  "avoid": ["gentle intro", "long calm stretches", "a consonant or resolved ending"],
+  "style_hint": "controlled_chaos",
+  "notes": "Two full drop-and-rebuild cycles before the final unstoppable climax. Register and density should max out at the very end."
+}

@@ -1,0 +1,32 @@
+{
+  "brief_format_version": 1,
+  "title": "EEEEEGone",
+  "logline": "A steady, relentless build from near-nothing into giant crossing waves of notes, swelling until every single key is in use and the density feels like a million notes — and it stays there.",
+  "mood_arc": [
+    "quiet unease",
+    "waves gathering",
+    "crossing currents intensifying",
+    "swarm overtaking",
+    "every key ablaze",
+    "total extreme overload"
+  ],
+  "energy_shape": "steady relentless build, never resetting, through gathering wave layers into a full-keyboard maximal-density overload that holds at the extreme through the final bar — no come-down, no decay",
+  "duration_seconds": 200,
+  "tempo_feel": "driving, accelerating from a moderate pulse into a relentless machine-gun extreme",
+  "imagery": [
+    "giant waves crossing in and out of each other",
+    "a swarm growing until it blots out the sky",
+    "every key on the piano lit at once",
+    "an overwhelming flood of sound"
+  ],
+  "palette": ["deep blue swells", "electric white flashes", "full-spectrum overload"],
+  "must_have_moments": [
+    "giant wave layers that visibly criss-cross in and out of each other",
+    "by the climax, every single key on the keyboard is in use",
+    "note density that feels like a million notes",
+    "stays at the extreme through the final bar, no decay or quiet ending"
+  ],
+  "avoid": ["a quiet or decayed ending", "starting at full extreme — this one must build"],
+  "style_hint": "organic_growth",
+  "notes": "Target near-maximal note density (zenith_extreme_density profile) so the piece reads as ~1M notes. Use multiple `wave` layers with different wavelength_bars/strand counts so the waves visibly criss-cross."
+}

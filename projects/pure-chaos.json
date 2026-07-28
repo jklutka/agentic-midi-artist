@@ -1,0 +1,291 @@
+{
+  "format_version": 1,
+  "name": "Pure Chaos",
+  "seed": 4207,
+  "export_profile": "zenith_high_density",
+  "brief": "projects\\pure-chaos.brief.json",
+  "artistic_direction": {
+    "theme": "A system overloads at full extreme from the first breath, blacks out twice without warning, crawls back each time, then climbs unstoppably into a total blackout.",
+    "mood": {
+      "start": "maximum chaos from the first bar",
+      "middle": "sudden void, trickling return, corrupted rebuild back to extreme, sudden void again, trickling return",
+      "end": "unstoppable climb to blackout"
+    },
+    "visual_focus": [
+      "a power grid overloading",
+      "a blackout",
+      "flickering emergency lights",
+      "a machine tearing itself apart"
+    ]
+  },
+  "music": {
+    "root": "A",
+    "octave": 4,
+    "scale": "harmonic_minor",
+    "tempo_start": 158,
+    "tempo_end": 205,
+    "beats_per_bar": 4
+  },
+  "scenes": [
+    {
+      "name": "Overload",
+      "duration_bars": 24,
+      "intent": {
+        "intensity_start": 0.92,
+        "intensity_end": 0.97,
+        "intensity_curve": "linear",
+        "register_center": 64,
+        "register_span_start": 70,
+        "register_span_end": 78,
+        "order": 0.15,
+        "harmonic_stability": 0.25
+      },
+      "layers": [
+        {
+          "name": "anchor",
+          "role": "bass",
+          "generator": { "type": "pulse", "params": { "max_subdivision": 8 } },
+          "color_group": "alarm",
+          "gain": 1.1,
+          "automation": []
+        },
+        {
+          "name": "storm",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 2.0 } },
+          "color_group": "static",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "surge",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "alternate", "runs_per_bar": 3 } },
+          "color_group": "surge",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "slabs",
+          "role": "accent",
+          "generator": { "type": "chord_wall", "params": { "sustain_beats": 0.0 } },
+          "color_group": "flash",
+          "gain": 1.05,
+          "automation": []
+        }
+      ],
+      "transition_out": "sudden_silence",
+      "automation": []
+    },
+    {
+      "name": "The Drop",
+      "duration_bars": 4,
+      "intent": {
+        "intensity_start": 0.03,
+        "intensity_end": 0.03,
+        "intensity_curve": "linear",
+        "register_center": 60,
+        "register_span_start": 6,
+        "register_span_end": 6,
+        "order": 0.9,
+        "harmonic_stability": 0.9
+      },
+      "layers": [
+        {
+          "name": "anchor",
+          "role": "bass",
+          "generator": { "type": "pulse", "params": { "max_subdivision": 1 } },
+          "color_group": "alarm",
+          "gain": 0.6,
+          "automation": []
+        }
+      ],
+      "transition_out": null,
+      "automation": []
+    },
+    {
+      "name": "Trickle Rise I",
+      "duration_bars": 28,
+      "intent": {
+        "intensity_start": 0.05,
+        "intensity_end": 0.9,
+        "intensity_curve": "exponential",
+        "register_center": 62,
+        "register_span_start": 10,
+        "register_span_end": 74,
+        "order": 0.5,
+        "harmonic_stability": 0.55
+      },
+      "layers": [
+        {
+          "name": "anchor",
+          "role": "bass",
+          "generator": { "type": "pulse", "params": { "max_subdivision": 8 } },
+          "color_group": "alarm",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "ember",
+          "role": "melody",
+          "generator": { "type": "mirror", "params": {} },
+          "color_group": "ember",
+          "gain": 0.9,
+          "automation": []
+        },
+        {
+          "name": "storm",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 1.4 } },
+          "color_group": "static",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "surge",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "alternate", "runs_per_bar": 2 } },
+          "color_group": "surge",
+          "gain": 1.0,
+          "automation": []
+        }
+      ],
+      "transition_out": "sudden_silence",
+      "automation": []
+    },
+    {
+      "name": "The Second Drop",
+      "duration_bars": 5,
+      "intent": {
+        "intensity_start": 0.02,
+        "intensity_end": 0.02,
+        "intensity_curve": "linear",
+        "register_center": 60,
+        "register_span_start": 6,
+        "register_span_end": 6,
+        "order": 0.9,
+        "harmonic_stability": 0.9
+      },
+      "layers": [
+        {
+          "name": "anchor",
+          "role": "bass",
+          "generator": { "type": "pulse", "params": { "max_subdivision": 1 } },
+          "color_group": "alarm",
+          "gain": 0.6,
+          "automation": []
+        }
+      ],
+      "transition_out": null,
+      "automation": []
+    },
+    {
+      "name": "Trickle Rise II",
+      "duration_bars": 26,
+      "intent": {
+        "intensity_start": 0.05,
+        "intensity_end": 0.95,
+        "intensity_curve": "exponential",
+        "register_center": 63,
+        "register_span_start": 10,
+        "register_span_end": 78,
+        "order": 0.35,
+        "harmonic_stability": 0.4
+      },
+      "layers": [
+        {
+          "name": "anchor",
+          "role": "bass",
+          "generator": { "type": "pulse", "params": { "max_subdivision": 10 } },
+          "color_group": "alarm",
+          "gain": 1.05,
+          "automation": []
+        },
+        {
+          "name": "ember",
+          "role": "melody",
+          "generator": { "type": "mirror", "params": {} },
+          "color_group": "ember",
+          "gain": 0.9,
+          "automation": []
+        },
+        {
+          "name": "storm",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 1.8 } },
+          "color_group": "static",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "surge",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "alternate", "runs_per_bar": 3 } },
+          "color_group": "surge",
+          "gain": 1.0,
+          "automation": []
+        },
+        {
+          "name": "slabs",
+          "role": "accent",
+          "generator": { "type": "chord_wall", "params": { "sustain_beats": 0.0 } },
+          "color_group": "flash",
+          "gain": 1.0,
+          "automation": []
+        }
+      ],
+      "transition_out": "keyboard_sweep",
+      "automation": []
+    },
+    {
+      "name": "Blackout",
+      "duration_bars": 32,
+      "intent": {
+        "intensity_start": 0.92,
+        "intensity_end": 1.0,
+        "intensity_curve": "exponential",
+        "register_center": 64,
+        "register_span_start": 80,
+        "register_span_end": 88,
+        "order": 0.08,
+        "harmonic_stability": 0.12
+      },
+      "layers": [
+        {
+          "name": "anchor",
+          "role": "bass",
+          "generator": { "type": "pulse", "params": { "max_subdivision": 14 } },
+          "color_group": "alarm",
+          "gain": 1.15,
+          "automation": []
+        },
+        {
+          "name": "storm",
+          "role": "texture",
+          "generator": { "type": "cloud", "params": { "density_scale": 2.6 } },
+          "color_group": "static",
+          "gain": 1.05,
+          "automation": []
+        },
+        {
+          "name": "surge",
+          "role": "visual_motion",
+          "generator": { "type": "cascade", "params": { "direction": "alternate", "runs_per_bar": 4 } },
+          "color_group": "surge",
+          "gain": 1.05,
+          "automation": []
+        },
+        {
+          "name": "slabs",
+          "role": "accent",
+          "generator": { "type": "chord_wall", "params": { "sustain_beats": 0.0 } },
+          "color_group": "flash",
+          "gain": 1.1,
+          "automation": []
+        }
+      ],
+      "transition_out": null,
+      "automation": []
+    }
+  ]
+}
