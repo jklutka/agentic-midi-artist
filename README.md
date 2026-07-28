@@ -7,7 +7,7 @@
 **Agentic MIDI Artist** is an agent-first **generative performance composer** for creating
 visually dramatic MIDI art, rendered with
 [Zenith-MIDI](https://github.com/arduano/Zenith-MIDI). The `midi-art` CLI is its engine,
-built so an AI agent (or a human) can drive the whole creative process end to end.
+built so an AI agent (or a human) can drive the whole creative process end to end. Here is a sample: [https://youtu.be/nVkUIi6lctA](https://youtu.be/nVkUIi6lctA).
 
 The creative object is the *performance* — its structure, pacing, geometry, tension, and
 climax. The `.mid` file is just the final serialization stage, deliberately designed for
