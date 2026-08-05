@@ -7,7 +7,7 @@
 **Agentic MIDI Artist** is an agent-first **generative performance composer** for creating
 visually dramatic MIDI art, rendered with
 [Zenith-MIDI](https://github.com/arduano/Zenith-MIDI). The `midi-art` CLI is its engine,
-built so an AI agent (or a human) can drive the whole creative process end to end. Here is a sample: [https://youtu.be/nVkUIi6lctA](https://youtu.be/nVkUIi6lctA).
+built so an AI agent (or a human) can drive the whole creative process end to end. Here are a few samples: [https://www.youtube.com/playlist?list=PLYHwzcLeUNPQ](https://www.youtube.com/playlist?list=PLYHwzcLeUNPQ).
 
 The creative object is the *performance* — its structure, pacing, geometry, tension, and
 climax. The `.mid` file is just the final serialization stage, deliberately designed for
@@ -286,14 +286,4 @@ ruff check .          # lint
 
 ## Roadmap
 
-Implemented: project files · scene timeline · layers · 7 generators (with declared param
-specs) · 4 transitions · intensity/register automation · artistic-control mapping · 3 style
-presets · Zenith export profiles · channel color groups · analysis + validation · scene-only
-preview · variations via seed override · v2 render manifests (project hash, issues, brief
-link) · HTML and PNG piano-roll/density/polyphony previews · variation comparison · the
-midi-art studio desktop app · the authoring contract (`describe`) · document lint with
-did-you-mean (`lint`) · `--json` machine-readable output · compact visual summaries ·
-creative briefs (`new --brief`) · agent workflow docs (AGENTS.md, docs/COMPOSING.md).
-
-Next: composition grammar for long-form arrangement, visual-gesture vocabulary as
-first-class commands, richer automation targets, retiring the legacy `midi_app` package.
+Full end-to-end arrangement. Maybe a dueling piano concept.
